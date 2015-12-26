@@ -56,8 +56,9 @@ Data Format:
 
 <dom-module id="nvd3-stacked-area">
   <template>
+    <!-- We need to put svg tag inside a div to set correct margins -->
     <div>
-      <svg id="svg"></svg>
+      <svg></svg>
     </div>
   </template>
 
@@ -171,7 +172,29 @@ Data Format:
       },
 
       _setMargin: function(marginTop, marginRight, marginBottom, marginLeft) {
-        this.chart.margin(this.margin);
+        if (marginTop) {
+          this.chart.margin({
+            "top": marginTop
+          });
+        }
+
+        if (marginRight) {
+          this.chart.margin({
+            "right": marginRight
+          });
+        }
+
+        if (marginBottom) {
+          this.chart.margin({
+            "bottom": marginBottom
+          });
+        }
+
+        if (marginLeft) {
+          this.chart.margin({
+            "left": marginLeft
+          });
+        }
       },
 
       _setNoData: function(noData) {
@@ -192,9 +215,11 @@ Data Format:
         }
       },
 
-      attached: function() {
-        this.set('svg', this.$.svg);
+      ready: function() {
+        this.set('svg', this.$$('svg'));
+      },
 
+      attached: function() {
         if (!this.stopAutoDrawing) {
           this.generateChart();
         }
