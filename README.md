@@ -1,4 +1,4 @@
-# &lt;nvd3-stacked-area&gt;
+# &lt;nvd3-stacked-area&gt; [![Build Status](https://travis-ci.org/saeidzebardast/nvd3-stacked-area.svg?branch=master)](https://travis-ci.org/saeidzebardast/nvd3-stacked-area)
 Stacked area chart element for [Polymer](https://www.polymer-project.org) using [nvd3](http://nvd3.org/). It's part of [nvd3 charting elements](https://github.com/saeidzebardast/nvd3-elements).
 
 ## Install
