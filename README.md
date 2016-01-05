@@ -11,7 +11,7 @@ bower install nvd3-stacked-area
 ### Tag
 
 ```
-<nvd3-stacked-area data="[[data]]"></nvd3-stacked-area>
+<nvd3-stacked-area data="[[data]]" auto-resize></nvd3-stacked-area>
 ```
 
 ### Data Format
