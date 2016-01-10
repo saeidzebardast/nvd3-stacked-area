@@ -1,0 +1,41 @@
+{
+  "name": "nvd3-stacked-area",
+  "authors": [
+    "Saeid Zebardast <saeid.zebardast@gmail.com>"
+  ],
+  "description": "Stacked area chart element for Polymer using nvd3.",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "nvd3",
+    "d3",
+    "chart",
+    "graph"
+  ],
+  "main": "nvd3-stacked-area.html",
+  "license": "http://saeidzebardast.github.io/nvd3-elements/LICENSE.txt",
+  "homepage": "https://github.com/saeidzebardast/nvd3-stacked-area/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "nvd3-behavior": "^0.6.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*",
+    "github-fork-ribbon": "^0.2.0"
+  },
+  "_release": "87b1fd0b48",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "87b1fd0b48f719654c46482520d707b0663e17ed"
+  },
+  "_source": "git://github.com/saeidzebardast/nvd3-stacked-area.git",
+  "_target": "master",
+  "_originalSource": "saeidzebardast/nvd3-stacked-area",
+  "_direct": true
+}
